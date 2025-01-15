@@ -1,0 +1,220 @@
+*{
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+nav{
+    padding: 20px 15px;
+    font-size: .75em;
+    font-weight: 550;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 0.1px solid rgb(221, 218, 218);
+    .navleft{
+        gap:10px;
+        display: flex;
+        justify-content: space-around;
+    }
+    a{
+        color: black;
+    }
+    button{
+        font-size: .75rem;
+        width: 100px;
+        height: 25px;
+        border-radius: 5px;
+        border: .1px solid;
+        font-weight: 550;
+        background: initial;
+    }
+}
+header{
+    background-color: white;
+    position: sticky;
+    top:0;
+    display: flex;
+    justify-content: space-between;
+    height: 62px;
+    width: 100%;
+    padding: 20px 15px;
+    border-bottom: 0.1px solid rgb(221, 218, 218);
+}
+.headleft{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    button{
+        border: none;
+        background-color: initial;
+    svg{
+        margin-top: 5px;
+        width: 30px;
+        height: 30px;
+        fill: black;
+        }
+    }
+    img{
+        width: 180px;
+        height: 30px;
+    }
+}
+.headright{
+    display: flex;
+    align-items: center;
+    gap:10px; 
+    #inp1{
+        display: none;
+    }
+    #search{
+        display: none;
+    }
+    i{
+        font-size: 1.5em;
+    }
+    svg{
+        width: 30px;
+        height: 30px;
+    }
+}
+main{
+    padding: 30px;
+}
+#inp1,#inp2,#inp3,#inp4,#inp5,#inp6,#inp7,#inp8,#inp9{
+    display: none;
+}
+#inp1:checked ~ .menu {
+display: flex;
+flex-direction: column;
+}
+.menu{
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    bottom:0;
+    left: 0;
+    width: 97%;
+    height: 100%;
+    background: white;
+    overflow-y: auto;
+}
+.menuhead{
+    display: flex;
+    position: sticky;
+    top: 0; 
+    z-index: 10; 
+    align-items: center;
+    justify-content: space-between;
+    padding: 25px 20px;
+    background-color: rgb(247, 247, 247);
+    height: 80px;
+    img{
+        width: 180px;
+        height: 30px;
+    }
+    button{
+        border: none;
+        font-size: 1.4em;
+        background: initial;
+
+    }
+}
+.menucontent{
+    background: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 10px;
+    li{
+        border-bottom: 0.1px solid rgb(221, 218, 218);
+        border-top: 0.1px solid rgb(221, 218, 218);
+        padding: 10px 20px;
+    }
+}
+
+#con11 ,#con21,#con31,#con41,#con51,#con61,#con71,#con81 {
+    display: none;
+    position: absolute;
+    top:0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    overflow-y: auto;
+    li{
+        border-bottom: 0.1px solid rgb(221, 218, 218);
+        border-top: 0.1px solid rgb(221, 218, 218);
+        padding: 10px 20px;
+    }
+}
+.menunav1{
+    display: flex;
+    justify-content: space-between;
+    padding: 5px;
+    i{
+        margin-right: 10px;
+    }
+}
+.menunav11{
+    border-top: 0.1px solid rgb(221, 218, 218);
+    display: flex;
+    padding: 10px 20px; 
+    justify-content: space-between ;
+    align-items: center;
+    width: 100%;
+    span{
+        flex: 1;
+        text-align: center; 
+    }
+}
+#inp2:checked ~ #con11{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#inp3:checked ~ #con21{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#inp4:checked ~ #con31{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#inp5:checked ~ #con41{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#inp6:checked ~ #con51{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#inp7:checked ~ #con61{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#inp8:checked ~ #con71{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+#inp9:checked ~ #con81{
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+}
+
+@media only screen and (min-width:1024px){
+
+}
